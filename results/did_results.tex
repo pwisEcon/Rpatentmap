@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{booktabs} % For formal tables
+\usepackage{amssymb} % For using math symbols
+\usepackage[a4paper, margin=1in]{geometry} % Adjust page margins
+
+\begin{document}
+
+\begin{table}[h!]
+\centering
+\caption{Annex1: DiD Results}
+\label{tab:regression_comparison}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Model 1 (Data1)}} & \multicolumn{2}{c}{\textbf{Model 2 (Data2)}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+\textbf{Variable} & \textbf{Estimate} & \textbf{Pr($>|$t$|$)} & \textbf{Estimate} & \textbf{Pr($>|$t$|$)} \\
+\midrule
+Intercept         & 0.6587 & $<2e-16^{***}$ & 0.7029 & $<2e-16^{***}$ \\
+quarter2          & 0.0034 & 0.8906 & -0.0356 & 0.0393$^{*}$ \\
+quarter3          & -0.0144 & 0.5401 & -0.0387 & 0.0173$^{*}$ \\
+quarter4          & -      & -     & -0.0296 & 0.0616$^{.}$ \\
+quarter5          & 0.0425 & 0.0568$^{.}$ & -      & - \\
+quarter6          & 0.0414 & 0.0617$^{.}$ & -0.0135 & 0.3741 \\
+quarter7          & 0.0253 & 0.2466 & -0.0112 & 0.4503 \\
+quarter8          & 0.0460 & 0.0334$^{*}$ & 0.0131 & 0.3769 \\
+Treated           & 0.0169 & 0.4677 & 0.0032 & 0.8364 \\
+quarter2$\times$Treated & -0.0465 & 0.1857 & 0.0045 & 0.8548 \\
+quarter3$\times$Treated & 0.0113 & 0.7371 & -0.0110 & 0.6367 \\
+quarter4$\times$Treated & -      & -     & -0.0188 & 0.4040 \\
+quarter5$\times$Treated & -0.0216 & 0.4982 & -      & - \\
+quarter6$\times$Treated & -0.0302 & 0.3366 & -0.0180 & 0.4025 \\
+quarter7$\times$Treated & -0.0141 & 0.6480 & -0.0092 & 0.6624 \\
+quarter8$\times$Treated & -0.0580 & 0.0587$^{.}$ & -0.0411 & 0.0499$^{*}$ \\
+\midrule
+\multicolumn{1}{l}{\textbf{Residual Std. Error:}} & \multicolumn{2}{c}{0.6267} & \multicolumn{2}{c}{0.6308} \\
+\multicolumn{1}{l}{\textbf{Degrees of Freedom:}} & \multicolumn{2}{c}{22338} & \multicolumn{2}{c}{44854} \\
+\multicolumn{1}{l}{\textbf{Multiple R-squared:}} & \multicolumn{2}{c}{0.001056} & \multicolumn{2}{c}{0.0007732} \\
+\multicolumn{1}{l}{\textbf{Adjusted R-squared:}} & \multicolumn{2}{c}{0.0004743} & \multicolumn{2}{c}{0.0004836} \\
+\multicolumn{1}{l}{\textbf{F-statistic:}} & \multicolumn{2}{c}{1.816} & \multicolumn{2}{c}{2.67} \\
+\multicolumn{1}{l}{\textbf{P-value:}} & \multicolumn{2}{c}{0.03501} & \multicolumn{2}{c}{0.000941} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
