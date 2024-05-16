@@ -1,0 +1,31 @@
+
+Call:
+lm(formula = log(cnt) ~ quarter * tgroup, data = data2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7160 -0.6733  0.0075  0.4069  4.1011 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          0.702912   0.010860  64.728   <2e-16 ***
+quarter2            -0.035588   0.017267  -2.061   0.0393 *  
+quarter3            -0.038748   0.016278  -2.380   0.0173 *  
+quarter4            -0.029627   0.015852  -1.869   0.0616 .  
+quarter6            -0.013490   0.015177  -0.889   0.3741    
+quarter7            -0.011215   0.014857  -0.755   0.4503    
+quarter8             0.013097   0.014820   0.884   0.3769    
+tgroupTRUE           0.003180   0.015400   0.206   0.8364    
+quarter2:tgroupTRUE  0.004460   0.024378   0.183   0.8548    
+quarter3:tgroupTRUE -0.010954   0.023194  -0.472   0.6367    
+quarter4:tgroupTRUE -0.018801   0.022528  -0.835   0.4040    
+quarter6:tgroupTRUE -0.018002   0.021505  -0.837   0.4025    
+quarter7:tgroupTRUE -0.009225   0.021125  -0.437   0.6624    
+quarter8:tgroupTRUE -0.041149   0.020981  -1.961   0.0499 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6308 on 44854 degrees of freedom
+Multiple R-squared:  0.0007732,	Adjusted R-squared:  0.0004836 
+F-statistic:  2.67 on 13 and 44854 DF,  p-value: 0.000941
+
