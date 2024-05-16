@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{booktabs} % For formal tables
+\usepackage{amssymb} % For using math symbols
+\usepackage[a4paper, margin=1in]{geometry} % Adjust page margins
+
+\begin{document}
+
+\begin{table}[h!]
+\centering
+\caption{Regression Results for 2013:2015 and 2005:2007}
+\label{tab:regression_comparison}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{2013:2015}} & \multicolumn{2}{c}{\textbf{2005:2007}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+\textbf{Variable} & \textbf{Estimate} & \textbf{Pr($>|$t$|$)} & \textbf{Estimate} & \textbf{Pr($>|$t$|$)} \\
+\midrule
+\textbf{PatentVal} & & & & \\
+Intercept         & 2.735e+00 & $<2e-16^{***}$ & 2.346e+00 & 0.000123$^{***}$ \\
+Bet Centrality         & 9.021e-05 & 0.024235$^{*}$ & 3.061e-04 & 0.144087 \\
+DeltaB2                & 1.576e-02 & 0.000138$^{***}$ & -2.895e-02 & 0.516120 \\
+N. of CPC           & -3.712e-03 & 0.095035$^{.}$ & -9.938e-03 & 0.091423$^{.}$ \\
+Sim Share         & -8.489e-03 & 0.000110$^{***}$ & -5.461e-02 & 0.475704 \\
+N. of pub patents              & -7.689e-05 & 0.040475$^{*}$ & -9.915e-05 & 0.322615 \\
+\midrule
+\multicolumn{1}{l}{\textbf{Residual Std. Error:}} & \multicolumn{2}{c}{0.9695} & \multicolumn{2}{c}{1.202} \\
+\multicolumn{1}{l}{\textbf{Degrees of Freedom:}} & \multicolumn{2}{c}{2805} & \multicolumn{2}{c}{429} \\
+\multicolumn{1}{l}{\textbf{Multiple R-squared:}} & \multicolumn{2}{c}{0.2097} & \multicolumn{2}{c}{0.2738} \\
+\multicolumn{1}{l}{\textbf{Adjusted R-squared:}} & \multicolumn{2}{c}{0.1891 } & \multicolumn{2}{c}{0.201 } \\
+\multicolumn{1}{l}{\textbf{F-statistic:}} & \multicolumn{2}{c}{10.19} & \multicolumn{2}{c}{3.762} \\
+\multicolumn{1}{l}{\textbf{P-value:}} & \multicolumn{2}{c}{2.2e-16} & \multicolumn{2}{c}{9.322e-13} \\
+\midrule
+\textbf{Centrality (Robust)} & & & & \\
+Intercept         & 1.831e+00 & 8.41e-09$^{***}$ & 1.888e+00 & 0.005478$^{**}$ \\
+Patent Real Value          & 5.062e-03 & 0.03217$^{*}$ & 9.009e-03 & 0.000503$^{***}$ \\
+DeltaB2              & 3.305e-02 & 7.24e-05$^{***}$ & -6.485e-03 & 0.897153 \\
+N. of pub patents               & 7.128e-04 & $<2e-16^{***}$ & 6.055e-04 & $<2e-16^{***}$ \\
+Cluster size       & 9.714e-03 & $<2e-16^{***}$ & 8.688e-03 & $<2e-16^{***}$ \\
+\midrule
+\multicolumn{1}{l}{\textbf{Residual Std. Error:}} & \multicolumn{2}{c}{1.941} & \multicolumn{2}{c}{1.351} \\
+\multicolumn{1}{l}{\textbf{Degrees of Freedom:}} & \multicolumn{2}{c}{2806} & \multicolumn{2}{c}{430} \\
+\multicolumn{1}{l}{\textbf{Multiple R-squared:}} & \multicolumn{2}{c}{0.398} & \multicolumn{2}{c}{0.5653} \\
+\multicolumn{1}{l}{\textbf{Adjusted R-squared:}} & \multicolumn{2}{c}{0.3826} & \multicolumn{2}{c}{0.5229} \\
+\multicolumn{1}{l}{\textbf{F-statistic:}} & \multicolumn{2}{c}{25.77} & \multicolumn{2}{c}{13.32} \\
+\multicolumn{1}{l}{\textbf{P-value:}} & \multicolumn{2}{c}{2.2e-16} & \multicolumn{2}{c}{ 2.2e-16} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\end{document}

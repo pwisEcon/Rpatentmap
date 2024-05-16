@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=midway] (1) at (0, 0) {\Huge Data};
+		\node [style=above] (3) at (0, 7) {Consumer};
+		\node [style=below] (4) at (0, -7) {Firm};
+		\node [style=below] (5) at (0, -3) {\scriptsize Collects};
+		\node [style=above] (6) at (0, 3) {\scriptsize Owns};
+		\node [style=none] (8) at (1, 0) {};
+		\node [style=right, align=left] (9) at (2.25, 0) {\scriptsize Provides \\ \scriptsize good or service};
+		\node [style=none] (13) at (-1, 0) {};
+		\node [style=left, align=right] (14) at (-2.25, 0) {\scriptsize Buys \\ \scriptsize good or service};
+		\node [style=below] (16) at (0, -10.5) { Data-Market};
+		\node [style=left] (18) at (-0.25, -9.25) {\scriptsize Buys};
+		\node [style=right] (19) at (0.25, -9.25) {\scriptsize Sells};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Edge arrow, bend left] (3) to (4);
+		\draw [style=new edge style 0, bend right] (3) to (4);
+		\draw [style=RightLeft] (4) to (16);
+		\draw [style=Dots] (3) to (6);
+		\draw [style=Dots] (6) to (1);
+		\draw [style=Dots] (4) to (5);
+		\draw [style=Dots] (5) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

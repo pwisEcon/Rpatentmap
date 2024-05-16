@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Literature review}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Definition and benefit for the inventor}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Computing a patent's value}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Measuring patent significance}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}The role of innovation networks}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Data and statistics}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Presentation}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Descriptive statistics}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Empirical strategy}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}A New measure of blocking effects}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Building an innovation network}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Regressions}{14}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Results}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Correlations}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Impact on future patent publications}{16}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}%
+\contentsline {section}{\numberline {7}References}{19}{section.7}%
+\contentsline {section}{\numberline {8}Annexes}{20}{section.8}%

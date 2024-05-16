@@ -1,1 +1,6 @@
+<<<<<<< Updated upstream
 *.sql linguist-detectable=true
+=======
+*.sql text eol=lf
+*.sql linguist-language=SQL
+>>>>>>> Stashed changes
